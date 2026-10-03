@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Raíces Multiespacio · Salón de eventos en Corrientes</title>
+<meta name="description" content="Salón, galería cubierta con parrilla y parque para tus eventos en Corrientes. Hasta 140 personas, 10 horas de uso exclusivo, limpieza incluida. Consultá por WhatsApp.">
+<meta name="theme-color" content="#152824">
+<meta property="og:title" content="Raíces Multiespacio · Salón de eventos en Corrientes">
+<meta property="og:description" content="¿Buscás el lugar ideal para tu gran evento? Salón climatizado, galería con parrilla y parque. Hasta 140 personas.">
+<meta property="og:image" content="fotos/02-fachada-atardecer.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="logos/logo_favicon.png">
+<link rel="apple-touch-icon" href="logos/logo_favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Raleway:wght@400;500;700;800&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+<style>
+:root{
+  --verde:#152824; --oliva:#7C8164; --salvia:#A2A18B; --terra:#B4704C; --terra-d:#9A5A3A; --terra-text:#8A4E30;
+  --arena:#E2CBAA; --crema:#F4F4E0; --ink:#152824;
+  --rule:2px solid var(--verde); --rule-light:2px solid rgba(244,244,224,.28);
+  --pad:clamp(20px,5vw,64px); --max:1240px;
+  --serif:"EB Garamond",Georgia,serif; --sans:"Raleway",system-ui,sans-serif; --script:"Mrs Saint Delafield",cursive;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--crema);color:var(--ink);font:400 17px/1.6 var(--sans);text-rendering:optimizeLegibility}
+img{display:block;max-width:100%}
+a{color:var(--terra-text);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--verde)}
+:focus-visible{outline:2px solid var(--terra);outline-offset:3px}
+::selection{background:var(--arena)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.05;margin:0;letter-spacing:-.01em;text-wrap:balance}
+h2{font-size:clamp(36px,6vw,64px)}
+h3{font-size:clamp(24px,3vw,30px)}
+p{margin:0;text-wrap:pretty}
+.script{font-family:var(--script);font-weight:400;font-size:1.35em;line-height:.6;letter-spacing:0;color:var(--terra);padding:0 .08em}
+.on-dark .script{color:var(--arena)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.sec{padding:clamp(64px,10vw,120px) 0;border-top:var(--rule)}
+.kicker{font:800 13px/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--terra-text);display:flex;gap:12px;align-items:center;margin-bottom:20px}
+.kicker b{font-weight:800;color:var(--verde);border:2px solid currentColor;padding:2px 7px}
+.on-dark .kicker{color:var(--arena)} .on-dark .kicker b{color:var(--crema)}
+.lead{font-size:clamp(18px,2vw,21px);max-width:62ch}
+.muted{color:#3d4a45}
+.on-dark{background:var(--verde);color:var(--crema)} .on-dark .muted{color:#d6d6c2}
+.on-dark a{color:var(--arena)}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:flex-start;gap:12px;min-height:52px;padding:14px 22px;font:800 14px/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--terra);color:#fff;border-color:var(--terra)}
+.btn-primary:hover{background:var(--terra-d);border-color:var(--terra-d);color:#fff}
+.btn-primary:active{background:#7f4a30}
+.btn-ghost{background:transparent;color:var(--verde);border-color:var(--verde)}
+.btn-ghost:hover{background:var(--verde);color:var(--crema)}
+.on-dark .btn-ghost,.hero .btn-ghost{color:var(--crema);border-color:var(--crema)}
+.on-dark .btn-ghost:hover,.hero .btn-ghost:hover{background:var(--crema);color:var(--verde)}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px}
+@media (max-width:520px){.btn-row .btn{flex:1 1 100%}}
+/* logo crop (the PNG is a square with padding) */
+.logo{position:relative;display:block;aspect-ratio:1400/900;overflow:hidden}
+.logo img{position:absolute;width:137.1%;max-width:none;left:-18.9%;top:-57.2%}
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:var(--verde);color:var(--crema);border-bottom:var(--rule-light)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.hdr .logo{width:78px}
+.nav{display:none;gap:4px}
+.nav a{color:var(--crema);text-decoration:none;font:700 13px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;padding:14px 10px;min-height:44px;display:flex;align-items:center;border-bottom:2px solid transparent}
+.nav a:hover{border-bottom-color:var(--terra);color:var(--crema)}
+.hdr .btn{min-height:44px;padding:10px 16px;font-size:12px}
+.hdr-cta{display:none}
+.burger{width:48px;height:48px;display:grid;place-items:center;background:transparent;border:2px solid rgba(244,244,224,.5);color:var(--crema);cursor:pointer}
+.burger:hover{border-color:var(--crema)}
+.burger svg{width:24px;height:24px}
+.drawer{position:fixed;inset:68px 0 0 0;z-index:39;background:var(--verde);color:var(--crema);overflow:auto;transform:translateY(-8px);opacity:0;visibility:hidden;transition:opacity .2s,transform .2s,visibility .2s}
+.drawer.open{opacity:1;visibility:visible;transform:none}
+.drawer nav{display:grid;border-top:var(--rule-light)}
+.drawer nav a{display:flex;align-items:center;justify-content:space-between;min-height:60px;padding:0 var(--pad);color:var(--crema);text-decoration:none;font:600 26px/1 var(--serif);border-bottom:var(--rule-light)}
+.drawer nav a:hover{background:#1e3631}
+.drawer .btn-row{padding:24px var(--pad) 120px}
+@media (min-width:1080px){.nav{display:flex}.hdr-cta{display:inline-flex}.burger{display:none}.drawer{display:none}}
+/* hero */
+.hero{position:relative;color:var(--crema);background:var(--verde);min-height:min(92svh,860px);display:flex;align-items:flex-end;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 70%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(21,40,36,.35) 0%,rgba(21,40,36,.15) 35%,rgba(21,40,36,.88) 100%)}
+.hero .wrap{position:relative;z-index:1;width:100%;padding-top:120px;padding-bottom:clamp(40px,7vw,80px)}
+.hero h1{font-size:clamp(44px,8.5vw,104px);max-width:13ch;margin-bottom:24px}
+.hero .script{color:var(--arena)}
+.hero p{font-size:clamp(18px,2.2vw,22px);max-width:46ch;margin-bottom:32px;color:#f4f4e0}
+.hero-facts{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:var(--rule-light);margin-top:40px}
+.hero-facts div{padding:16px 16px 0 0}
+.hero-facts div+div{padding-left:16px;border-left:var(--rule-light)}
+.hero-facts strong{display:block;font:600 clamp(30px,5vw,48px)/1 var(--serif)}
+.hero-facts span{font:700 12px/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--arena)}
+/* promo */
+.promo{background:var(--terra);color:#fff;border-top:0}
+.promo .wrap{display:grid;gap:28px;padding-top:clamp(40px,6vw,64px);padding-bottom:clamp(40px,6vw,64px)}
+.promo h2{font-size:clamp(34px,6vw,64px);color:#fff}
+.promo .kicker{color:#fff}.promo .kicker b{color:#fff}
+.promo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));border-top:2px solid rgba(255,255,255,.55)}
+.promo-grid div{padding:16px 16px 16px 0;border-bottom:2px solid rgba(255,255,255,.35)}
+.promo-grid small{display:block;font:700 12px/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase}
+.promo-grid s{opacity:.8;font-size:15px}
+.promo-grid strong{display:block;font:600 34px/1.1 var(--serif)}
+.promo .btn-primary{background:var(--verde);border-color:var(--verde)}
+.promo .btn-primary:hover{background:#0c1815;border-color:#0c1815}
+.promo .fine{font-size:14px}
+/* about */
+.about{display:grid;gap:40px}
+.about .frame{position:relative}
+.about .frame img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.about .frame::before{content:"";position:absolute;inset:16px -16px -16px 16px;border:2px solid var(--terra);z-index:-1}
+.types{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border-top:var(--rule);margin-top:40px}
+.types li{list-style:none;padding:16px 16px 16px 0;border-bottom:2px solid rgba(21,40,36,.18);font-weight:700}
+.types{padding:0}
+@media (min-width:900px){.about{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:72px;align-items:start}}
+/* spaces */
+.spaces{display:grid;border-top:var(--rule);margin-top:48px}
+.space{display:grid;gap:20px;padding:32px 0;border-bottom:var(--rule)}
+.space .n{font:700 13px/1 var(--sans);letter-spacing:.14em;color:var(--terra-text)}
+.space-imgs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.space-imgs img{width:100%;aspect-ratio:4/3;object-fit:cover;cursor:zoom-in}
+.space-imgs img:first-child{grid-column:1/-1;aspect-ratio:16/10}
+.space ul{margin:12px 0 0;padding:0;list-style:none;display:grid;gap:6px}
+.space li{display:flex;gap:10px}
+.space li::before{content:"";flex:none;width:8px;height:8px;margin-top:.62em;background:var(--oliva)}
+@media (min-width:900px){
+  .space{grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:48px;padding:48px 0}
+  .space-imgs{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .space-imgs img:first-child{grid-column:span 2;grid-row:span 2;aspect-ratio:auto;height:100%}
+}
+/* gallery */
+.filters{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;margin:32px 0 20px;scrollbar-width:none}
+.filters::-webkit-scrollbar{display:none}
+.filters button{flex:none;min-height:44px;padding:0 18px;font:700 13px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;background:transparent;color:var(--crema);border:2px solid rgba(244,244,224,.4);cursor:pointer}
+.filters button:hover{border-color:var(--crema)}
+.filters button[aria-pressed="true"]{background:var(--crema);color:var(--verde);border-color:var(--crema)}
+.gal{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.gal button{padding:0;border:0;background:#0d1b18;cursor:zoom-in;aspect-ratio:1;overflow:hidden}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.gal button:hover img{transform:scale(1.04)}
+.gal button[hidden]{display:none}
+@media (min-width:700px){.gal{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:1080px){.gal{grid-template-columns:repeat(4,minmax(0,1fr))}}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:60;background:rgba(10,20,18,.96);display:none;align-items:center;justify-content:center;padding:64px 12px 72px}
+.lb.open{display:flex}
+.lb img{max-width:100%;max-height:100%;object-fit:contain}
+.lb button{position:absolute;width:52px;height:52px;display:grid;place-items:center;background:var(--verde);color:var(--crema);border:2px solid rgba(244,244,224,.5);cursor:pointer}
+.lb button:hover{border-color:var(--crema)}
+.lb svg{width:24px;height:24px}
+.lb .x{top:10px;right:10px}.lb .pv{left:10px;bottom:10px}.lb .nx{right:10px;bottom:10px}
+.lb figcaption{position:absolute;bottom:22px;left:76px;right:76px;color:var(--crema);font-size:14px;text-align:left}
+@media (min-width:900px){.lb .pv,.lb .nx{top:50%;bottom:auto;transform:translateY(-50%)}.lb .pv{left:20px}.lb .nx{right:20px}.lb figcaption{left:20px}}
+/* capacity */
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:var(--rule);margin-top:40px}
+.stats div{padding:24px 16px 24px 0;border-bottom:var(--rule)}
+.stats div:nth-child(even){padding-left:16px;border-left:var(--rule)}
+.stats strong{display:block;font:600 clamp(44px,7vw,80px)/1 var(--serif)}
+.stats span{display:block;margin-top:8px;font-weight:700}
+.stats small{display:block;color:#3d4a45;font-size:15px}
+@media (min-width:900px){.stats{grid-template-columns:repeat(4,minmax(0,1fr))}.stats div{padding-left:20px!important;border-left:var(--rule)}.stats div:first-child{padding-left:0!important;border-left:0}}
+.note{font-size:14px;color:#3d4a45;margin-top:16px;max-width:70ch}
+/* includes */
+.cols2{display:grid;gap:0;margin-top:40px;border-top:var(--rule)}
+.cols2>div{padding:28px 0;border-bottom:var(--rule)}
+.chk{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:12px}
+.chk li{display:grid;grid-template-columns:24px 1fr;gap:12px}
+.chk svg{width:22px;height:22px;margin-top:2px;color:var(--oliva)}
+.chk.no svg{color:var(--terra)}
+.chk li span small{display:block;color:#3d4a45;font-size:15px}
+@media (min-width:900px){.cols2{grid-template-columns:minmax(0,3fr) minmax(0,2fr)}.cols2>div{padding:36px 40px 36px 0}.cols2>div+div{padding-left:40px;border-left:var(--rule)}.chk.two{grid-template-columns:1fr 1fr;column-gap:32px}}
+.extra{margin-top:32px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;background:var(--arena);padding:20px 24px}
+.extra p{font-weight:700}
+/* prices */
+.prices{margin-top:40px;border-top:var(--rule)}
+.pgroup{border-bottom:var(--rule)}
+.pgroup h3{font-size:22px;font-family:var(--sans);font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:20px 0 4px}
+.prow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;align-items:baseline;padding:16px 0;border-top:2px solid rgba(21,40,36,.14)}
+.pgroup h3+.prow{border-top:0}
+.prow b{font-weight:700;font-size:18px}
+.prow span{color:#3d4a45;font-size:15px;grid-column:1}
+.prow strong{font:600 clamp(28px,4vw,40px)/1 var(--serif);grid-row:1/span 2;grid-column:2;align-self:center}
+@media (min-width:900px){.prices{display:grid;grid-template-columns:1fr 1fr}.pgroup{padding-right:40px}.pgroup+.pgroup{padding:0 0 0 40px;border-left:var(--rule)}}
+.disclaimer{margin-top:24px;padding:16px 20px;border:2px solid var(--verde);display:grid;gap:6px;font-size:15px;max-width:820px}
+/* rules */
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:40px;border-top:var(--rule-light)}
+.rules div{padding:24px 24px 24px 0;border-bottom:var(--rule-light)}
+.rules strong{display:block;font:600 24px/1.15 var(--serif);margin-bottom:6px}
+.rules p{color:#d6d6c2;font-size:16px}
+/* steps */
+.steps{list-style:none;padding:0;margin:40px 0 0;display:grid;border-top:var(--rule);counter-reset:s}
+.steps li{display:grid;grid-template-columns:56px 1fr;gap:16px;padding:24px 0;border-bottom:var(--rule);counter-increment:s}
+.steps li::before{content:counter(s,decimal-leading-zero);font:600 40px/1 var(--serif);color:var(--terra)}
+.steps h3{font-size:24px;margin-bottom:6px}
+@media (min-width:1000px){.steps{grid-template-columns:repeat(4,minmax(0,1fr))}.steps li{grid-template-columns:1fr;padding:28px 24px 28px 0}.steps li+li{padding-left:24px;border-left:var(--rule)}}
+.freeze{margin-top:32px;display:grid;gap:0;border:2px solid var(--verde)}
+.freeze div{padding:16px 20px}
+.freeze div+div{border-top:2px solid var(--verde)}
+.freeze b{display:block;font:800 13px/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--terra-text)}
+@media (min-width:900px){.freeze{grid-template-columns:repeat(3,1fr)}.freeze div+div{border-top:0;border-left:2px solid var(--verde)}}
+/* faq */
+.faq{margin-top:40px;border-top:var(--rule);max-width:920px}
+.faq details{border-bottom:var(--rule)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;min-height:64px;padding:16px 0;font:600 clamp(21px,2.5vw,26px)/1.2 var(--serif)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:hover{color:var(--terra-text)}
+.faq summary svg{flex:none;width:24px;height:24px;transition:transform .2s}
+.faq details[open] summary svg{transform:rotate(45deg)}
+.faq details p{padding:0 48px 24px 0;max-width:68ch}
+/* location */
+.loc{display:grid;gap:0;margin-top:40px;border:var(--rule)}
+.loc-info{padding:28px clamp(20px,3vw,40px);display:grid;gap:20px;align-content:start}
+.loc-info address{font-style:normal;font:600 clamp(24px,3vw,30px)/1.2 var(--serif)}
+.map{position:relative;min-height:360px;border-top:var(--rule);background:var(--salvia)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:saturate(.7)}
+@media (min-width:900px){.loc{grid-template-columns:minmax(0,2fr) minmax(0,3fr)}.map{border-top:0;border-left:var(--rule);min-height:480px}}
+/* final cta */
+.final h2{font-size:clamp(44px,8vw,96px);max-width:14ch;margin-bottom:28px}
+/* footer */
+.ftr{background:var(--verde);color:var(--crema);border-top:var(--rule-light);padding:56px 0 120px}
+.ftr .grid{display:grid;gap:32px}
+.ftr .logo{width:180px}
+.ftr h4{margin:0 0 10px;font:800 12px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--arena)}
+.ftr a{color:var(--crema);text-decoration:none;display:inline-flex;min-height:44px;align-items:center;gap:10px}
+.ftr a:hover{color:var(--arena)}
+.ftr svg{width:20px;height:20px}
+.ftr .bottom{margin-top:40px;padding-top:20px;border-top:var(--rule-light);font-size:14px;color:#c9c9b5;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+@media (min-width:900px){.ftr .grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+/* floating wa */
+.fab{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:50;display:flex;align-items:center;gap:10px;min-height:60px;padding:0 20px 0 16px;background:#1f7a4d;color:#fff;text-decoration:none;font:800 14px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;box-shadow:0 8px 24px rgba(10,20,18,.35);border:2px solid #fff}
+.fab:hover{background:#17623d;color:#fff}
+.fab svg{width:28px;height:28px}
+@media (max-width:520px){.fab span{display:none}.fab{width:60px;padding:0;justify-content:center}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.22-.16-.47-.28Z"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><rect x="3" y="4" width="18" height="18"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M4 12.5l5 5L20 6.5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M12 4v16M4 12h16"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M15 6l-6 6 6 6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16"/><path d="m2 6 10 7 10-7"/></symbol>
+</svg>
+
+<header class="hdr">
+  <div class="wrap">
+    <a href="#inicio" class="logo" aria-label="Raíces Multiespacio, inicio"><img src="logos/logo-Raices_5-claro-fondotransp.png" alt="Raíces Multiespacio"></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#raices">Raíces</a><a href="#espacios">Espacios</a><a href="#capacidad">Capacidad</a><a href="#incluye">Qué incluye</a><a href="#tarifas">Tarifas</a><a href="#reservar">Reservar</a><a href="#faq">Preguntas</a><a href="#ubicacion">Ubicación</a>
+    </nav>
+    <a class="btn btn-primary hdr-cta" data-wa="consulta" href="#">Escribinos</a>
+    <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer"><svg><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+<div class="drawer" id="drawer">
+  <nav aria-label="Menú móvil">
+    <a href="#raices">Qué es Raíces <svg width="20" height="20"><use href="#i-arrow"/></svg></a>
+    <a href="#espacios">Espacios <svg width="20" height="20"><use href="#i-arrow"/></svg></a>
+    <a href="#capacidad">Capacidad <svg width="20" height="20"><use href="#i-arrow"/></svg></a>
+    <a href="#incluye">Qué incluye <svg width="20" height="20"><use href="#i-arrow"/></svg></a>
+    <a href="#tarifas">Tarifas <svg width="20" height="20"><use href="#i-arrow"/></svg></a>
+    <a href="#reglas">Reglas del salón <svg width="20" height="20"><use href="#i-arrow"/></svg></a>
+    <a href="#reservar">Cómo reservar <svg width="20" height="20"><use href="#i-arrow"/></svg></a>
+    <a href="#faq">Preguntas frecuentes <svg width="20" height="20"><use href="#i-arrow"/></svg></a>
+    <a href="#ubicacion">Ubicación <svg width="20" height="20"><use href="#i-arrow"/></svg></a>
+  </nav>
+  <div class="btn-row">
+    <a class="btn btn-primary" data-wa="consulta" href="#"><svg><use href="#i-wa"/></svg>Consultá por WhatsApp</a>
+    <a class="btn btn-ghost" data-wa="visita" href="#"><svg><use href="#i-cal"/></svg>Agendá una visita</a>
+  </div>
+</div>
+
+<main>
+<section class="hero" id="inicio" data-screen-label="Hero">
+  <img src="fotos/15-parque-anochecer-salon.jpg" alt="El parque de Raíces al anochecer, con guirnaldas de luces y el salón iluminado al fondo" fetchpriority="high">
+  <div class="wrap">
+    <p class="kicker" style="color:var(--arena)">Salón de eventos · Corrientes</p>
+    <h1>¿Buscás el lugar ideal para tu <span class="script">gran evento</span>?</h1>
+    <p>Salón climatizado, galería cubierta con parrilla y un parque con guirnaldas. Un espacio para celebrar, crear o disfrutar de encontrarse cálidamente.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" data-wa="consulta" href="#"><svg><use href="#i-wa"/></svg>Consultá por WhatsApp</a>
+      <a class="btn btn-ghost" data-wa="visita" href="#"><svg><use href="#i-cal"/></svg>Agendá una visita</a>
+    </div>
+    <div class="hero-facts">
+      <div><strong>140</strong><span>personas</span></div>
+      <div><strong>10 h</strong><span>de uso exclusivo</span></div>
+      <div><strong>3</strong><span>espacios en uno</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="promo" id="promo" data-screen-label="Promo octubre" data-promo-hasta="2026-10-31">
+  <div class="wrap">
+    <div>
+      <p class="kicker"><b>Promo</b> Válida para eventos hasta el 31/10</p>
+      <h2>En octubre, desde $90.000 ya podés alquilar el salón.</h2>
+    </div>
+    <div class="promo-grid">
+      <div><small>Lun a jue · hasta 10 h</small><s>$150.000</s><strong>$90.000</strong></div>
+      <div><small>Lun a jue · full day</small><s>$250.000</s><strong>$150.000</strong></div>
+      <div><small>Vie a dom · diurno</small><s>$250.000</s><strong>$180.000</strong></div>
+      <div><small>Vie a dom · nocturno</small><s>$350.000</s><strong>$250.000</strong></div>
+      <div><small>Vie a dom · full day</small><s>$450.000</s><strong>$400.000</strong></div>
+    </div>
+    <div class="btn-row" style="align-items:center">
+      <a class="btn btn-primary" data-wa="promo" href="#"><svg><use href="#i-wa"/></svg>Quiero la promo</a>
+      <p class="fine">Feriados y vísperas se cobran como viernes a domingo.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="raices" data-screen-label="Qué es Raíces">
+  <div class="wrap about">
+    <div class="frame"><img src="fotos/01-fachada-cartel-dia.jpg" alt="Fachada de Raíces Multiespacio con su cartel" loading="lazy"></div>
+    <div>
+      <p class="kicker"><b>01</b> Qué es Raíces</p>
+      <h2>Acompañamos tus momentos <span class="script">más especiales</span></h2>
+      <p class="lead" style="margin-top:28px">Somos un espacio diseñado para que vivas encuentros únicos. Desde bodas y cumpleaños, hasta talleres, retiros, jornadas laborales o experiencias culturales.</p>
+      <p class="muted" style="margin-top:16px;max-width:60ch">Raíces Multiespacio te ofrece comodidad, calidez y versatilidad para que cada encuentro sea memorable. Alquilás el espacio completo, con uso exclusivo, y vos elegís a tus proveedores: hay cocina equipada y parrilla para que trabajen cómodos.</p>
+      <ul class="types">
+        <li>Cumpleaños y quinceañeros</li><li>Casamientos y aniversarios</li><li>Eventos corporativos</li>
+        <li>Ferias y festivales</li><li>Despedidas de soltero/a</li><li>Reuniones familiares</li>
+        <li>Talleres y retiros</li><li>Experiencias culturales</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="espacios" data-screen-label="Espacios">
+  <div class="wrap">
+    <p class="kicker"><b>02</b> Espacios</p>
+    <h2>Adentro, bajo techo <span class="script">y al aire libre</span></h2>
+    <div class="spaces">
+      <article class="space">
+        <div>
+          <p class="n">SALÓN</p>
+          <h3 style="margin:10px 0 12px">Salón principal climatizado</h3>
+          <p class="muted">Unos 92 m² con ventanales al jardín, piso claro y escenario elevado. Ideal para mesas, pista de baile o una ronda de taller.</p>
+          <ul><li>Hasta 90 personas</li><li>3 aires acondicionados</li><li>Escenario de 3 × 2,8 m</li><li>Baños completos y cambiador para bebés</li></ul>
+        </div>
+        <div class="space-imgs">
+          <img src="fotos/04-salon-armado-mesas-redondas.jpg" alt="Salón armado con mesas redondas y sillas blancas" loading="lazy">
+          <img src="fotos/05-salon-escenario-luces-evento.jpg" alt="Escenario con luces y bola de espejos" loading="lazy">
+          <img src="fotos/08-salon-taller-ronda.jpg" alt="Taller en ronda dentro del salón" loading="lazy">
+        </div>
+      </article>
+      <article class="space">
+        <div>
+          <p class="n">GALERÍA</p>
+          <h3 style="margin:10px 0 12px">Galería cubierta con parrilla</h3>
+          <p class="muted">Una galería larga que abraza el salón y mira al parque. Tiene parrilla de ladrillo y una mesa de madera maciza.</p>
+          <ul><li>Hasta 50 personas</li><li>Parrilla incluida (coordinás antes)</li><li>Mesa de madera para 12</li><li>Iluminación para la noche</li></ul>
+        </div>
+        <div class="space-imgs">
+          <img src="fotos/12-galeria-parrilla-mesa-madera.jpg" alt="Parrilla de ladrillo y mesa de madera en la galería" loading="lazy" style="object-position:50% 60%">
+          <img src="fotos/11-galeria-cubierta-jardin.jpg" alt="Galería cubierta mirando al jardín" loading="lazy">
+          <img src="fotos/13-galeria-noche-luces.jpg" alt="La galería de noche con guirnaldas" loading="lazy">
+        </div>
+      </article>
+      <article class="space">
+        <div>
+          <p class="n">PARQUE</p>
+          <h3 style="margin:10px 0 12px">Parque con árboles y guirnaldas</h3>
+          <p class="muted">Verde, sombra de árboles grandes y luces colgantes. Funciona para recepciones al aire libre, ferias y festivales.</p>
+          <ul><li>Guirnaldas de luces</li><li>Ideal para stands y ferias</li></ul>
+        </div>
+        <div class="space-imgs">
+          <img src="fotos/14-parque-guirnaldas-noche.jpg" alt="Parque de noche con guirnaldas de luces bajo un árbol" loading="lazy" style="object-position:50% 65%">
+          <img src="fotos/16-evento-aire-libre-noche.jpg" alt="Evento al aire libre de noche en el parque" loading="lazy">
+          <img src="fotos/18-feria-parque-stands.jpg" alt="Stand de una feria en el parque" loading="lazy">
+        </div>
+      </article>
+      <article class="space">
+        <div>
+          <p class="n">COCINA</p>
+          <h3 style="margin:10px 0 12px">Cocina equipada</h3>
+          <p class="muted">Con pasaplato al salón, para que tu catering o tu familia trabajen cómodos.</p>
+          <ul><li>Cocina a gas de 6 hornallas y horno</li><li>Heladera y freezer</li><li>Pava eléctrica</li><li>Dispenser de agua potable</li></ul>
+        </div>
+        <div class="space-imgs">
+          <img src="fotos/19-cocina-equipada.jpg" alt="Cocina equipada con mesadas, cocina industrial, heladera y freezer" loading="lazy" style="object-position:50% 55%">
+        </div>
+      </article>
+      <article class="space">
+        <div>
+          <p class="n">ACCESO</p>
+          <h3 style="margin:10px 0 12px">Estacionamiento y acceso</h3>
+          <p class="muted">Parque y estacionamiento externo para tus invitados, a 400 m de Av. Maipú.</p>
+          <ul><li>Estacionamiento externo</li><li>WiFi Starlink</li><li>Grupo electrógeno</li></ul>
+        </div>
+        <div class="space-imgs">
+          <img src="fotos/20-acceso-estacionamiento.jpg" alt="Acceso de tierra con autos estacionados junto al salón" loading="lazy">
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec on-dark" id="galeria" data-screen-label="Galería de fotos" style="border-top:0">
+  <div class="wrap">
+    <p class="kicker"><b>03</b> Galería</p>
+    <h2>Mirá cómo se vive <span class="script">Raíces</span></h2>
+    <div class="filters" role="group" aria-label="Filtrar fotos">
+      <button type="button" aria-pressed="true" data-f="todas">Todas</button>
+      <button type="button" aria-pressed="false" data-f="salon">Salón</button>
+      <button type="button" aria-pressed="false" data-f="galeria">Galería</button>
+      <button type="button" aria-pressed="false" data-f="parque">Parque</button>
+      <button type="button" aria-pressed="false" data-f="eventos">Eventos</button>
+      <button type="button" aria-pressed="false" data-f="fachada">Fachada</button>
+    </div>
+    <div class="gal" id="gal"></div>
+  </div>
+</section>
+
+<section class="sec" id="capacidad" data-screen-label="Capacidad" style="border-top:0">
+  <div class="wrap">
+    <p class="kicker"><b>04</b> Capacidad</p>
+    <h2>Lugar para <span class="script">todos</span></h2>
+    <div class="stats">
+      <div><strong>140</strong><span>personas en total</span><small>90 en el salón + 50 en la galería</small></div>
+      <div><strong>67</strong><span>sentadas en mesas</span><small>con nuestro mobiliario, ampliable</small></div>
+      <div><strong>75</strong><span>sillas de madera</span><small>+ 6 banquetas</small></div>
+      <div><strong>10 h</strong><span>de uso exclusivo</span><small>armado y desarme incluidos</small></div>
+    </div>
+    <p class="note">Mobiliario: 3 mesas rectangulares (30 personas), 3 mesas redondas (25) y 1 mesa en galería (12). Armado estándar: 67 personas en mesas + 32 sillas sueltas. Se puede ampliar según cómo armes el espacio.</p>
+  </div>
+</section>
+
+<section class="sec" id="incluye" data-screen-label="Qué incluye">
+  <div class="wrap">
+    <p class="kicker"><b>05</b> Qué incluye</p>
+    <h2>Todo esto viene con <span class="script">cualquier franja</span></h2>
+    <div class="cols2">
+      <div>
+        <h3>Incluido</h3>
+        <ul class="chk two">
+          <li><svg><use href="#i-check"/></svg><span>Uso exclusivo del salón climatizado<small>3 aires acondicionados</small></span></li>
+          <li><svg><use href="#i-check"/></svg><span>Limpieza post evento</span></li>
+          <li><svg><use href="#i-check"/></svg><span>Armado y desarme<small>dentro de la franja contratada</small></span></li>
+          <li><svg><use href="#i-check"/></svg><span>Cocina equipada<small>6 hornallas, horno, heladera, freezer</small></span></li>
+          <li><svg><use href="#i-check"/></svg><span>Parrilla<small>coordinás antes</small></span></li>
+          <li><svg><use href="#i-check"/></svg><span>Mesas y sillas<small>coordinás antes</small></span></li>
+          <li><svg><use href="#i-check"/></svg><span>Galería cubierta</span></li>
+          <li><svg><use href="#i-check"/></svg><span>Baños completos</span></li>
+          <li><svg><use href="#i-check"/></svg><span>Parque y estacionamiento</span></li>
+          <li><svg><use href="#i-check"/></svg><span>WiFi Starlink</span></li>
+          <li><svg><use href="#i-check"/></svg><span>Grupo electrógeno</span></li>
+          <li><svg><use href="#i-check"/></svg><span>Dispenser de agua potable<small>el agua de la canilla no es potable</small></span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>No incluido</h3>
+        <ul class="chk no">
+          <li><svg><use href="#i-x"/></svg><span>Catering y bebidas</span></li>
+          <li><svg><use href="#i-x"/></svg><span>Vajilla y mantelería</span></li>
+          <li><svg><use href="#i-x"/></svg><span>Decoración</span></li>
+          <li><svg><use href="#i-x"/></svg><span>DJ y sonido</span></li>
+          <li><svg><use href="#i-x"/></svg><span>Fotografía y filmación</span></li>
+          <li><svg><use href="#i-x"/></svg><span>Seguridad privada<small>se puede sumar con 80 invitados o más</small></span></li>
+          <li><svg><use href="#i-x"/></svg><span>Pantalla o proyector</span></li>
+          <li><svg><use href="#i-x"/></svg><span>Pileta</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="extra">
+      <p>Extra: parlante JBL PartyBox Club 120 por $10.000.</p>
+      <a class="btn btn-ghost" data-wa="consulta" href="#"><svg><use href="#i-wa"/></svg>Consultalo</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="tarifas" data-screen-label="Tarifas">
+  <div class="wrap">
+    <p class="kicker"><b>06</b> Tarifas</p>
+    <h2>Elegí tu <span class="script">franja</span></h2>
+    <p class="lead muted" style="margin-top:20px">Precios regulares por evento, en pesos argentinos. Todas las franjas incluyen limpieza; el armado y el desarme van dentro del horario.</p>
+    <div class="prices">
+      <div class="pgroup">
+        <h3>Lunes a jueves</h3>
+        <div class="prow"><b>Hasta 10 horas</b><span>en el horario que elijas</span><strong>$150.000</strong></div>
+        <div class="prow"><b>Full day</b><span>8 a 5 h</span><strong>$250.000</strong></div>
+      </div>
+      <div class="pgroup">
+        <h3>Viernes a domingo y feriados</h3>
+        <div class="prow"><b>Diurno</b><span>8 a 18 h</span><strong>$250.000</strong></div>
+        <div class="prow"><b>Nocturno</b><span>20 a 5 h</span><strong>$350.000</strong></div>
+        <div class="prow"><b>Full day</b><span>8 a 5 h</span><strong>$450.000</strong></div>
+      </div>
+    </div>
+    <div class="disclaimer">
+      <strong>Precios sujetos a actualización.</strong>
+      <span class="muted">Se actualizan cada trimestre por IPC. Feriados, puentes y vísperas de feriado se cobran como viernes a domingo. Confirmá el valor vigente por WhatsApp antes de reservar.</span>
+    </div>
+    <div class="btn-row" style="margin-top:28px">
+      <a class="btn btn-primary" data-wa="fecha" href="#"><svg><use href="#i-wa"/></svg>Consultá disponibilidad</a>
+      <a class="btn btn-ghost" data-wa="visita" href="#"><svg><use href="#i-cal"/></svg>Agendá una visita</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec on-dark" id="reglas" data-screen-label="Reglas del salón">
+  <div class="wrap">
+    <p class="kicker"><b>07</b> Reglas del salón</p>
+    <h2>Para que todo salga <span class="script">bien</span></h2>
+    <p class="lead muted" style="margin-top:20px">Cualquier otra decoración la coordinamos sin problema. Estas son las pocas cosas que no se pueden hacer:</p>
+    <div class="rules">
+      <div><strong>Sin pirotecnia</strong><p>Nada de fuegos artificiales. Bengalas de humo, solo afuera y con autorización.</p></div>
+      <div><strong>Paredes intactas</strong><p>No se puede clavar ni pegar cosas en las paredes.</p></div>
+      <div><strong>Sin confeti ni nieve</strong><p>No se permite papel picado, confeti ni nieve artificial en aerosol.</p></div>
+      <div><strong>No se fuma adentro</strong><p>Para fumar, afuera, en el parque.</p></div>
+      <div><strong>Revisión al ingresar</strong><p>Revisamos todo en conjunto. Si ves un faltante o daño, avisanos por WhatsApp con foto en los primeros 30 minutos.</p></div>
+      <div><strong>Eventos con menores</strong><p>Firma un adulto responsable, que tiene que estar presente durante el evento.</p></div>
+      <div><strong>Horarios y ruidos</strong><p>Respetá el horario pactado y las normas de ruidos del barrio.</p></div>
+      <div><strong>Bandas pequeñas</strong><p>Grupos musicales solo pequeños y sin público propio. No nos responsabilizamos por objetos que queden al terminar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="reservar" data-screen-label="Cómo reservar" style="border-top:0">
+  <div class="wrap">
+    <p class="kicker"><b>08</b> Cómo reservar</p>
+    <h2>Reservar es <span class="script">simple</span></h2>
+    <ol class="steps">
+      <li><div><h3>Escribinos</h3><p class="muted">Contanos qué evento querés hacer, la fecha y la franja. Si querés, coordinamos una visita.</p></div></li>
+      <li><div><h3>Señá el 30%</h3><p class="muted">Con la seña confirmás la fecha. Podés pagar por transferencia o en efectivo; te pasamos los datos por WhatsApp.</p></div></li>
+      <li><div><h3>Firmá online</h3><p class="muted">Necesitamos nombre completo, DNI, domicilio y mail. El contrato se firma online por DocuSign.</p></div></li>
+      <li><div><h3>Completá el saldo</h3><p class="muted">El 70% restante, hasta 30 días antes del evento (si falta menos, hasta 72 h antes).</p></div></li>
+    </ol>
+    <div class="freeze">
+      <div><b>Evento en menos de 4 meses</b>El precio queda 100% congelado desde la seña.</div>
+      <div><b>Entre 4 y 12 meses</b>La seña queda fija y el saldo se ajusta al precio vigente.</div>
+      <div><b>Más de 12 meses</b>Te guardamos la fecha, sin compromiso de precio.</div>
+    </div>
+    <p class="note">La seña no se reintegra si cancelás. El contrato detalla los reintegros parciales del saldo con más de 45 días de aviso.</p>
+    <div class="btn-row" style="margin-top:28px">
+      <a class="btn btn-primary" data-wa="fecha" href="#"><svg><use href="#i-wa"/></svg>Reservá tu fecha</a>
+      <a class="btn btn-ghost" data-wa="visita" href="#"><svg><use href="#i-cal"/></svg>Agendá una visita</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq" data-screen-label="Preguntas frecuentes">
+  <div class="wrap">
+    <p class="kicker"><b>09</b> Preguntas frecuentes</p>
+    <h2>Lo que más nos <span class="script">preguntan</span></h2>
+    <div class="faq">
+      <details><summary>¿Cuántas personas entran?<svg><use href="#i-plus"/></svg></summary><p>Hasta 140: 90 adentro y 50 en la galería. Sentadas con nuestras mesas entran 67, y se puede ampliar según el armado.</p></details>
+      <details><summary>¿Cuánto cuesta?<svg><use href="#i-plus"/></svg></summary><p>Depende del día y la franja: de lunes a jueves desde $150.000 (hasta 10 horas) y de viernes a domingo desde $250.000. Los precios están sujetos a actualización; escribinos y te confirmamos el valor vigente.</p></details>
+      <details><summary>¿Qué incluye el alquiler?<svg><use href="#i-plus"/></svg></summary><p>Limpieza, cocina equipada, parrilla, mesas y sillas, 3 aires acondicionados, WiFi, grupo electrógeno, galería, baños, estacionamiento y agua potable.</p></details>
+      <details><summary>¿Tienen catering?<svg><use href="#i-plus"/></svg></summary><p>No, solo alquilamos el espacio. Tenés cocina equipada y parrilla para tu proveedor.</p></details>
+      <details><summary>¿Tienen sonido?<svg><use href="#i-plus"/></svg></summary><p>Podés sumar un parlante JBL PartyBox Club 120 por $10.000. No hay pantalla ni proyector.</p></details>
+      <details><summary>¿Tienen pileta?<svg><use href="#i-plus"/></svg></summary><p>No, el espacio no tiene pileta.</p></details>
+      <details><summary>¿Puedo entrar antes a decorar?<svg><use href="#i-plus"/></svg></summary><p>El armado y el desarme van dentro de la franja que contratás. Si necesitás más tiempo, te conviene una franja más larga o el full day.</p></details>
+      <details><summary>¿Cómo reservo?<svg><use href="#i-plus"/></svg></summary><p>Con el 30% de seña confirmás la fecha; el saldo, hasta 30 días antes. El contrato se firma online. Escribinos por WhatsApp y te guiamos.</p></details>
+      <details><summary>¿Qué no se puede usar?<svg><use href="#i-plus"/></svg></summary><p>Pirotecnia, confeti o papel picado, nieve en aerosol, y no se puede clavar ni pegar en las paredes. Todo lo demás lo coordinamos.</p></details>
+      <details><summary>¿Puedo traer una banda?<svg><use href="#i-plus"/></svg></summary><p>Sí, solo grupos pequeños y sin público propio.</p></details>
+      <details><summary>¿Dónde queda?<svg><use href="#i-plus"/></svg></summary><p>En Los Lapachos y Las Araucarias, B° Santa Margarita, Corrientes, frente al Hípico Santa Catalina. Se entra desde Av. Maipú, a 400 m.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="ubicacion" data-screen-label="Ubicación">
+  <div class="wrap">
+    <p class="kicker"><b>10</b> Ubicación</p>
+    <h2>Dónde <span class="script">estamos</span></h2>
+    <div class="loc">
+      <div class="loc-info">
+        <address>Los Lapachos (Calle Ex vías) y Las Araucarias, B° Santa Margarita, Corrientes</address>
+        <p class="muted">Frente al Hípico Santa Catalina. Se ingresa desde Av. Maipú, a 400 m.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://maps.app.goo.gl/1E3z4XwhuYqMYVKa9" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>Cómo llegar</a>
+          <a class="btn btn-ghost" data-wa="visita" href="#"><svg><use href="#i-cal"/></svg>Agendá una visita</a>
+        </div>
+      </div>
+      <div class="map">
+        <iframe title="Mapa de Raíces Multiespacio" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Ra%C3%ADces%20multiespacio%2C%20Santa%20Margarita%2C%20Corrientes&z=15&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec on-dark final" data-screen-label="CTA final">
+  <div class="wrap">
+    <p class="kicker">Escribinos</p>
+    <h2>Contanos tu idea y armamos <span class="script">tu evento</span></h2>
+    <div class="btn-row">
+      <a class="btn btn-primary" data-wa="consulta" href="#"><svg><use href="#i-wa"/></svg>Consultá por WhatsApp</a>
+      <a class="btn btn-ghost" data-wa="visita" href="#"><svg><use href="#i-cal"/></svg>Agendá una visita</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="grid">
+      <div><span class="logo"><img src="logos/logo-Raices_5-claro-fondotransp.png" alt="Raíces Multiespacio" loading="lazy"></span><p style="margin-top:20px;color:#d6d6c2;max-width:34ch">Gracias por elegirnos para tus momentos especiales.</p></div>
+      <div><h4>Contacto</h4>
+        <a data-wa="consulta" href="#"><svg><use href="#i-wa"/></svg>WhatsApp</a><br>
+        <a href="mailto:raicesmultiespacio.ok@gmail.com"><svg><use href="#i-mail"/></svg>raicesmultiespacio.ok@gmail.com</a>
+      </div>
+      <div><h4>Seguinos</h4><a href="https://instagram.com/raices.multiespacio" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg>@raices.multiespacio</a></div>
+      <div><h4>Dirección</h4><a href="https://maps.app.goo.gl/1E3z4XwhuYqMYVKa9" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>B° Santa Margarita, Corrientes</a></div>
+    </div>
+    <div class="bottom"><span>© <span id="yr">2026</span> Raíces Multiespacio</span><span>Precios sujetos a actualización</span></div>
+  </div>
+</footer>
+
+<a class="fab" data-wa="consulta" href="#" aria-label="Escribinos por WhatsApp"><svg><use href="#i-wa"/></svg><span>WhatsApp</span></a>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <figure style="margin:0;display:contents"><img id="lbimg" alt=""><figcaption id="lbcap"></figcaption></figure>
+  <button class="x" type="button" aria-label="Cerrar"><svg><use href="#i-x"/></svg></button>
+  <button class="pv" type="button" aria-label="Foto anterior"><svg><use href="#i-left"/></svg></button>
+  <button class="nx" type="button" aria-label="Foto siguiente"><svg><use href="#i-right"/></svg></button>
+</div>
+
+<script>
+(function(){
+  var WA='https://wa.me/5493794011150?text=';
+  var T={
+    consulta:'Hola! Quiero consultar por el salón para un evento',
+    visita:'Hola! Quiero agendar una visita a Raíces. ¿Qué día y horario les queda bien?',
+    promo:'Hola! Quiero consultar por la promo de octubre para un evento',
+    fecha:'Hola! Quiero consultar disponibilidad de fecha para un evento'
+  };
+  document.querySelectorAll('[data-wa]').forEach(function(a){
+    a.href=WA+encodeURIComponent(T[a.dataset.wa]||T.consulta);a.target='_blank';a.rel='noopener';
+  });
+  // Promo: se oculta sola después del 31/10/2026
+  var p=document.getElementById('promo');
+  if(p&&new Date()>new Date(p.dataset.promoHasta+'T23:59:59-03:00'))p.remove();
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  // Menú
+  var b=document.querySelector('.burger'),d=document.getElementById('drawer');
+  function setMenu(o){d.classList.toggle('open',o);b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Cerrar menú':'Abrir menú');b.querySelector('use').setAttribute('href',o?'#i-x':'#i-menu');document.body.style.overflow=o?'hidden':''}
+  b.addEventListener('click',function(){setMenu(!d.classList.contains('open'))});
+  d.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setMenu(false)})});
+
+  // Galería
+  var F=[
+    ['02-fachada-atardecer','Fachada al atardecer','fachada'],['03-detalle-cartel-raices','El cartel de Raíces','fachada'],
+    ['04-salon-armado-mesas-redondas','Salón armado con mesas redondas','salon'],['05-salon-escenario-luces-evento','Escenario con luces','salon'],
+    ['06-salon-vacio-gente-bailando','Baile en el salón','salon eventos'],['07-salon-noche-baile','Clase de baile de noche','salon eventos'],
+    ['08-salon-taller-ronda','Taller en ronda','salon eventos'],['09-grupo-evento-banner-raices','Encuentro en Raíces','salon eventos'],
+    ['10-galeria-cubierta-dia','Galería cubierta de día','galeria'],['11-galeria-cubierta-jardin','Galería y jardín','galeria'],
+    ['12-galeria-parrilla-mesa-madera','Parrilla y mesa de madera','galeria'],['13-galeria-noche-luces','Galería de noche','galeria'],
+    ['14-parque-guirnaldas-noche','Parque con guirnaldas','parque'],['15-parque-anochecer-salon','Parque al anochecer','parque'],
+    ['16-evento-aire-libre-noche','Evento al aire libre','parque eventos'],['17-feria-galeria-stands','Feria en la galería','galeria eventos'],
+    ['18-feria-parque-stands','Feria en el parque','parque eventos'],['19-cocina-equipada','Cocina equipada','salon'],
+    ['01-fachada-cartel-dia','Fachada de día','fachada'],['20-acceso-estacionamiento','Acceso y estacionamiento','fachada parque']
+  ];
+  var g=document.getElementById('gal');
+  F.forEach(function(f,i){
+    var bt=document.createElement('button');bt.type='button';bt.dataset.cat=f[2];bt.dataset.i=i;bt.setAttribute('aria-label','Ampliar: '+f[1]);
+    bt.innerHTML='<img src="fotos/'+f[0]+'.jpg" alt="'+f[1]+'" loading="lazy">';g.appendChild(bt);
+  });
+  document.querySelectorAll('.filters button').forEach(function(fb){
+    fb.addEventListener('click',function(){
+      document.querySelectorAll('.filters button').forEach(function(x){x.setAttribute('aria-pressed',x===fb)});
+      var c=fb.dataset.f;g.querySelectorAll('button').forEach(function(x){x.hidden=!(c==='todas'||x.dataset.cat.split(' ').indexOf(c)>-1)});
+    });
+  });
+
+  // Lightbox (galería + fotos de espacios)
+  var lb=document.getElementById('lb'),li=document.getElementById('lbimg'),lc=document.getElementById('lbcap'),list=[],cur=0,last;
+  function show(i){cur=(i+list.length)%list.length;li.src=list[cur].src;li.alt=list[cur].alt;lc.textContent=list[cur].alt}
+  function open(arr,i,from){list=arr;last=from;show(i);lb.classList.add('open');document.body.style.overflow='hidden';lb.querySelector('.x').focus()}
+  function close(){lb.classList.remove('open');document.body.style.overflow='';last&&last.focus()}
+  g.addEventListener('click',function(e){var bt=e.target.closest('button');if(!bt)return;
+    var vis=[].slice.call(g.querySelectorAll('button:not([hidden]) img'));open(vis,vis.indexOf(bt.querySelector('img')),bt)});
+  document.querySelectorAll('.space-imgs').forEach(function(s){var imgs=[].slice.call(s.querySelectorAll('img'));
+    imgs.forEach(function(im,i){im.tabIndex=0;im.addEventListener('click',function(){open(imgs,i,im)});im.addEventListener('keydown',function(e){if(e.key==='Enter')open(imgs,i,im)})})});
+  lb.querySelector('.x').onclick=close;lb.querySelector('.pv').onclick=function(){show(cur-1)};lb.querySelector('.nx').onclick=function(){show(cur+1)};
+  lb.addEventListener('click',function(e){if(e.target===lb)close()});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)});
+  var sx=0;lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
+  lb.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)show(cur+(dx<0?1:-1))});
+})();
+</script>
+</body>
+</html>
